@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider video</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="./img/video1.mp4"
+          autoplay
+          muted
+          loop class="active"
+          
+        ></video>
+        <video src="./img/video2.mp4" autoplay muted loop ></video>
+        <video src="./img/video3.mp4" autoplay muted loop></video>
+        <video src="./img/video4.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">World</a>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Tokyo</h2>
+              <p>
+                Tokyo combina tecnología avanzada con rica cultura tradicional. 
+                Disfruta la cultura pop, gastronomía excepcional y templos antiguos.
+                Una experiencia única en una ciudad vibrante y llena de contrastes.
+              </p>
+            </div>
+            <div>
+              <h2>Paris</h2>
+              <p>
+                París, la ciudad del amor, es famosa por su arquitectura impresionante, 
+                como la Torre Eiffel y el Arco del Triunfo. La gastronomía es excepcional, 
+                con delicias como croissants, macarons y vino. Los museos, como el Louvre,
+                son mundialmente conocidos.
+              </p>
+            </div>
+            <div>
+              <h2>Egypt</h2>
+              <p>
+                Descubre la majestuosidad de la ciudad de El Cairo en Egipto, donde la antiguedad 
+                y la modernidad se fusionan. Explora la Gran Pirámide de Giza, el Museo Egipcio 
+                y el Bazar de Khan el-Khalili, y déjate seducir por la cultura y la historia del país.
+              </p>
+            </div>
+            <div>
+              <h2>Maldives</h2>
+              <p>
+                Las Maldivas son un paraíso terrenal con playas de arenas blancas y aguas cristalinas
+                 de color turquesa. Sus arrecifes de coral hacen de estas playas el lugar perfecto para
+                el buceo y el snorkeling.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText();"><img src="./img/left.png" /></li>
+          <li onclick="netxSlide();nextSlideText();"><img src="./img/right.png" /></li>
+        </ul>
+      </div>
+    </section>
+   <script src="./scrpit.js"></script>
+  </body>
+</html>
